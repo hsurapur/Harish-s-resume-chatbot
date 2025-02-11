@@ -8,7 +8,7 @@ import os
 st.set_page_config(page_title="Harish's Resume Chatbot", layout="wide")
 st.title("Harish's Chatbot Using Gemini LLM")
 
-pdf_directory = "Harish-s-resume-chatbot/Harish_Surapur-Resume.pdf"
+pdf_directory = r"Harish-s-resume-chatbot/Harish_Surapur-Resume.pdf"
 
 if "memory" not in st.session_state:
     st.session_state.memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
